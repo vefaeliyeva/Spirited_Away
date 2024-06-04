@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  }
+.navbar_mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 2px solid black;
+  background-color: greenyellow;
+}
+.nav_mobile_btn {
+  padding: 10px;
+  background-color: black;
+  color: greenyellow;
+  border: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid black;
+  background-color: greenyellow;
+}
+.navbar button {
+  padding: 10px;
+  background-color: black;
+  color: greenyellow;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.9mm;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.hero_section {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  justify-content: space-around;
+}
+.hero_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+}
+.hero_left h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: url(https://t4.ftcdn.net/jpg/05/12/16/47/360_F_512164771_mCQUWVfAhaVWpjTVGYuSWRJL2z3hIQ3s.jpg);
+  background-clip: text;
+  color: transparent;
+}
+.hero_left p {
+  width: 80%;
+  font-size: 22px;
+  text-align: justify;
+  line-height: 0.7cm;
+}
+.hero_right {
+  width: 40%;
+  padding: 20px;
+  border: 2px solid greenyellow;
+  border-radius: 35px;
+  padding: 25px;
+}
+.hero_right img {
+  width: 100%;
+  border-radius: 25px;
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .navbar_mobile {
+    display: flex;
+  }
+  .hero_section {
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+  }
+  .hero_left {
+    width: 100%;
+  }
+  .hero_left p {
+    width: 100%;
+  }
+  .hero_right {
+    width: 100%;
+  }
+}
